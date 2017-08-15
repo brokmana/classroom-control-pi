@@ -5,3 +5,6 @@ mod 'acme/ohmyzsh', '0.1.2'
 mod 'vcsrepo',
   :git => 'https://github.com/puppetlabs/puppetlabs-vcsrepo'
 
+mod 'arioch/redis'
+mod 'stahnma/epel'
+
