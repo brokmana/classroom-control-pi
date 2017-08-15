@@ -9,3 +9,4 @@ class profile::redis {
   }
   contain redis
 }
+maxmemory => '10mb'
