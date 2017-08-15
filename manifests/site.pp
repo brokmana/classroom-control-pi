@@ -31,3 +31,9 @@ node default {
   
   notify { "Hello world! I am ${::fqdn}": }
 }
+
+node 'sshastri.puppetlabs.vm' {
+
+  notify { "This machines ip address is: ${::ipaddress}" : }
+
+}
