@@ -12,7 +12,7 @@ class skeleton {
   owner  => 'root',
   group  => 'root',
   mode   => '0644',  }
-  path   => puppet:///modules/skeleton/bashrc
+  path   => 'puppet:///modules/skeleton/bashrc'
 
 
 }
