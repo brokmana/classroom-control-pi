@@ -25,7 +25,9 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-  
+  unless $environment in [ 'production', 'staging' ] {
+    notify { "Warning: I want a cooler warning message. I'm in environment: ${environment} on  ${::fqdn}": } 
+  }
   # example code for the classroom
   include examples::puppetize
   
