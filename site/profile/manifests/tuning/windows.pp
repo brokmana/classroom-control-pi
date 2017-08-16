@@ -11,11 +11,13 @@ class profile::tuning::windows {
       key    => 'HKLM\SYSTEM\CurrentControlSet\Services\TCPIP\Parameter',
       value  => 'TcpMaxDataRetransmissions',
       data   => '5',
+      }
       
       registry::value { 'cpTimedWaitDelay':
       key    => 'HKLM\SYSTEM\CurrentControlSet\Services\TCPIP\Parameters',
       value  => 'cpTimedWaitDelay',
       data   => '0x0000001e',
+      }
   
   
   
