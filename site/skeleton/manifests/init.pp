@@ -8,10 +8,10 @@ class skeleton {
   
   # add a resource to manage /etc/skel/.bashrc
   file { '/etc/skel':
-  ensure => directory,
+  ensure => file,
   owner  => 'root',
   group  => 'root',
-  mode   => '0755',  }
+  mode   => '0644',  }
   path   => puppet:///modules/skeleton/bashrc
 
 
