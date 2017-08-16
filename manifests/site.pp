@@ -31,5 +31,5 @@ node default {
   # example code for the classroom
   include examples::puppetize
 
-  notify { "Please work this time code manager!": }
+  notify { "Please work this time for realsy code manager!": }
 }
