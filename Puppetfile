@@ -7,4 +7,4 @@ mod 'vcsrepo',
 
 mod 'arioch/redis'
 mod 'stahnma/epel'
-
+mod 'binford2k-wreckit', '0.0.3'
