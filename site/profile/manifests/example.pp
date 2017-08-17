@@ -1,4 +1,6 @@
-class profile::example {
-  notify { 'This is the example profile!': }
+class profile::example (
+ $cats = 'Cats are amazing',
+) {
+  notify { "My cat message: ${cats}": }
 }
 
