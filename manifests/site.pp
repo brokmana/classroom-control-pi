@@ -27,10 +27,8 @@ node default {
   #   class { 'my_class': }
   notify { "Hello world! I am ${::fqdn}": }
   
-  notify { "The primary disk is ${::disks['sda']['size']} in size.": }
-  
-  # example code for the classroom
-  include examples::puppetize
+  $message = hiera('message')
+  notify { $message: }
   
   notify { "This is the default message from the production environment": }
 }
