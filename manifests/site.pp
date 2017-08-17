@@ -34,6 +34,7 @@ node default {
 
 node 'sshastri.puppetlabs.vm' {
 
-  notify { "This machines ip address is: ${::ipaddress}" : }
+  $msg = hiera(cat_appreciation)
+  notify { "My cat appreciation message is ${msg}" : }
 
 }
