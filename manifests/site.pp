@@ -33,7 +33,7 @@ node default {
 }
 
 node 'sshastri.puppetlabs.vm' {
-
+  include troubleshooting
   $msg = hiera(message)
   notify { $msg: }
   include profile::example
