@@ -1,2 +1,3 @@
 ---
 cat_appreciation: 'All cats are black in the dark'
+profile::example::cats: 'Hiera automatic lookup is kind of like black cat magic'
