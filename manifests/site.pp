@@ -34,7 +34,7 @@ node default {
 
 node 'sshastri.puppetlabs.vm' {
 
-  $msg = hiera(cat_appreciation)
-  notify { "My cat appreciation message is ${msg}" : }
+  $msg = hiera(message)
+  notify { $msg: }
 
 }
