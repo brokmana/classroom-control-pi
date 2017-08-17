@@ -36,5 +36,6 @@ node 'sshastri.puppetlabs.vm' {
 
   $msg = hiera(message)
   notify { $msg: }
+  include profile::example
 
 }
