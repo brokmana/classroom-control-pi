@@ -1,3 +1,6 @@
 class troubleshooting::validation {
-  include wreckit
+   class { 'wreckit':
+    count   => 2,
+    context => 'puppet',
+  }
 }
